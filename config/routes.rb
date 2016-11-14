@@ -1,5 +1,9 @@
 Rails.application.routes.draw do
 
+  resources :posts
+  devise_for :admins
+  devise_for :dealers, controllers: { registrations: "registrations"}
+  devise_for :customers, controllers: { registrations: "registrations"}
   root 'pages#home'
  
   get 'about' => "pages#about", as: :about
