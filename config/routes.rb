@@ -1,5 +1,9 @@
 Rails.application.routes.draw do
 
+  get 'dealer/home'
+
+  get 'customer/home'
+
   resources :posts
   devise_for :admins
   devise_for :dealers, controllers: { registrations: "registrations"}
