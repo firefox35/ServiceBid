@@ -1,4 +1,7 @@
 class DealerController < ApplicationController
-  def home
-  end
+    before_filter :authenticate_dealer!
+    
+    def home
+      
+    end
 end

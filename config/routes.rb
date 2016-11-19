@@ -1,17 +1,16 @@
 Rails.application.routes.draw do
 
-  get 'dealer/home'
-
-  get 'customer/home'
-
-  resources :posts
   devise_for :admins
-  devise_for :dealers, controllers: { registrations: "registrations"}
-  devise_for :customers, controllers: { registrations: "registrations"}
+  devise_for :dealers
+  devise_for :customers 
+     
   root 'pages#home'
  
   get 'about' => "pages#about", as: :about
   get 'contact' => "pages#contact", as: :contact
+  get 'dealer' => "dealer#home", as: :dealer
+  get 'customer' => "customer#home", as: :customer
+
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

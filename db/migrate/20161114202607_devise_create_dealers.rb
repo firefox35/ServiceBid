@@ -2,10 +2,8 @@ class DeviseCreateDealers < ActiveRecord::Migration
   def change
     create_table :dealers do |t|
       
-      #Dealer Name
-      t.string :name
-      t.string :address
-      t.integer :phone
+       #Dealers Name
+      #t.string :name
       
       ## Database authenticatable
       t.string :email,              null: false, default: ""

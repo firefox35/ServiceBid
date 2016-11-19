@@ -1,29 +1,47 @@
 class PagesController < ApplicationController
+  
+  
   def home
+    if customer_signed_in?
+        redirect_to :controller=>'customer', :action => 'home'
+        
+    elsif dealer_signed_in?
+        redirect_to :controller=>'dealer', :action => 'home'
     
+    elsif admin_signed_in?
+        redirect_to :controller=>'admin', :action => 'home'
+    else 
+        return :controller=>'pages', :action => 'home'
+    end    
   end
 
   def about
+    if customer_signed_in?
+        redirect_to :controller=>'customer', :action => 'home'
+        
+    elsif dealer_signed_in?
+        redirect_to :controller=>'dealer', :action => 'home'
     
+    elsif admin_signed_in?
+        redirect_to :controller=>'admin', :action => 'home'
+    else 
+        return :controller=>'pages', :action => 'home'
+    end       
   end
 
   def contact
-    
-  end
-  
-  def customer
+      
     if customer_signed_in?
-       redirect_to customer_home_path
-    else
-      redirect_to new_customer_session_path
-    end
+        redirect_to :controller=>'customer', :action => 'home'
+        
+    elsif dealer_signed_in?
+        redirect_to :controller=>'dealer', :action => 'home'
+    
+    elsif admin_signed_in?
+        redirect_to :controller=>'admin', :action => 'home'
+    else 
+        return :controller=>'pages', :action => 'home'
+    end  
   end
   
-  def dealer
-    if dealer_signed_in?
-       redirect_to dealer_home_path
-    else
-      redirect_to new_dealer_session_path
-    end
-  end
 end

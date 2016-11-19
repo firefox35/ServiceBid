@@ -8,14 +8,8 @@
 </head>
 <body>
   
-  <% if customer_signed_in? %>
-      <p>Hello, <%= current_customer.name %> - <%= link_to "Sign_out", destroy_customer_session_path, :method => 'delete'%></p>
-  
-      <br>
-  
-      <% end %>
-
-  
+ <p class="notice"><%= notice %></p>
+ <p class="alert"><%= alert %></p> 
   
 <%= render 'shared/navbar' %>
 <%= yield %>
