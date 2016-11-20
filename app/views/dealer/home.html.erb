@@ -1,3 +1,233 @@
-<h1>Dealer#home</h1>
-<p>Find me in app/views/dealer/home.html.erb</p>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>Dashboard Template for Bootstrap</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../../dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="../../assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="dealer.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script type="text/javascript" src="http://gc.kis.scr.kaspersky-labs.com/1B74BD89-2A22-4B93-B451-1C9E1052A0EC/main.js" charset="UTF-8"></script><script src="../../assets/js/ie-emulation-modes-warning.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
 <%= link_to "Sign out", destroy_dealer_session_path, method: :delete %>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Service Bid</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+            <form class="navbar-form navbar-right">
+            <input type="text" class="form-control" placeholder="Search...">
+          </form>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Profile</a></li>
+            <li><a href="#">Help</a></li>
+            <li><%= link_to "Sign out", destroy_dealer_session_path, method: :delete %></li>
+          </ul>
+         
+        </div>
+      </div>
+    </nav>
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-3 col-md-2 sidebar">
+          <ul class="nav nav-sidebar">
+            <li class="active"><a href="#">Overview <span class="sr-only">(current)</span></a></li>
+            <li><a href="#">Reports</a></li>
+            <li><a href="#">Job Offers</a></li>
+            <li><a href="#">Export</a></li>
+          </ul>
+          <ul class="nav nav-sidebar">
+            <li><a href="">Nav item</a></li>
+            <li><a href="">Nav item again</a></li>
+            <li><a href="">One more nav</a></li>
+            <li><a href="">Another nav item</a></li>
+            <li><a href="">More navigation</a></li>
+          </ul>
+          <ul class="nav nav-sidebar">
+            <li><a href="">Nav item again</a></li>
+            <li><a href="">One more nav</a></li>
+            <li><a href="">Another nav item</a></li>
+          </ul>
+        </div>
+        <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+          <h1 class="page-header">Dealer Dashboard</h1>
+            <img class="resp-img respImgFormatted" data-default="http://media.caranddriver.com/images/media/51/dissected-lotus-based-infiniti-emerg-e-sports-car-concept-top-image-photo-451994-s-original.jpg" data-defer="true" width="678" height="325" style="border: 0px;" alt="" title="" data-interchange="[http://media.caranddriver.com/images/media/51/dissected-lotus-based-infiniti-emerg-e-sports-car-concept-top-image-photo-451994-s-original.jpg, (default)]" data-uuid="interchange-ivr73axt0" src="http://media.caranddriver.com/images/media/51/dissected-lotus-based-infiniti-emerg-e-sports-car-concept-top-image-photo-451994-s-original.jpg">
+          
+
+          <h2 class="sub-header">Job Offers</h2>
+          <div class="table-responsive">
+            <table class="table table-striped">
+              <thead>
+                <tr>
+                  <th>Customer ID</th>
+                  <th>Customer Name</th>
+                  <th>Address</th>
+                  <th>Job Description</th>
+                  <th>Contact No</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1,001</td>
+                  <td>John Power</td>
+                  <td>5 Abbey Street,Naas,Co.Kildare</td>
+                  <td>Need to replace Timing Belt on 2010 Ford Mondeo 1.8TDI</td>
+                  <td>086 5593949</td>
+                </tr>
+                <tr>
+                  <td>1,002</td>
+                  <td>Mary O'Donnell</td>
+                  <td>The Beach Head,Sutton,Co.Dublin</td>
+                  <td>Need Service on 2014 Ford Mondeo 2.0tdi</td>
+                  <td>089 1768333</td>
+                </tr>
+                <tr>
+                  <td>1,003</td>
+                  <td>Sean Furlong</td>
+                  <td>4 The Way,Kells, Co.Meath</td>
+                  <td>Engine problems with 2010 Fiat Scudo 1.9tdi</td>
+                  <td>089 7845672</td>
+                </tr>
+                <tr>
+                  <td>1,003</td>
+                  <td>Eddie Long</td>
+                  <td>7 The Parks, Dunshaughlin, Co.Meath</td>
+                  <td>Timing Belt need on 2012 Skoda Yeti</td>
+                  <td>086 2378562</td>
+                </tr>
+                <tr>
+                  <td>1,004</td>
+                  <td>Steven Reid</td>
+                  <td>5 The Park, Finglas, Dublin</td>
+                  <td>Tyres need replace on 2008 Ford Focus 1.6tdi</td>
+                  <td>085 1355562</td>
+                </tr>
+                <tr>
+                  <td>1,005</td>
+                  <td>Nuala Shaw</td>
+                  <td>4 The Lawns,Ratoath, Co.Meath </td>
+                  <td>Exhaust needs replacing on 2011 Toyota Avensis 2.0tdi</td>
+                  <td>087 7675844</td>
+                </tr>
+                <tr>
+                  <td>1,006</td>
+                  <td>Sarah Newton</td>
+                  <td>The Lawns, Curragh, Co.Kildare</td>
+                  <td>Towbar need to fitted on 2015 LandRover</td>
+                  <td>089 6665832</td>
+                </tr>
+                <tr>
+                  <td>1,007</td>
+                  <td>Shane Rice</td>
+                  <td>56 Belfast Road, Drogheda, Co.Louth</td>
+                  <td>Damage to front of car needs repairing on 2007 Volkswagen Passet</td>
+                  <td>089 3242593</td>
+                </tr>
+                <tr>
+                  <td>1,008</td>
+                  <td>Peter Furlong</td>
+                  <td>9 Beaufort place, Drogheda, Co.Louth</td>
+                  <td>Car Servicing Needed on 2013 Skoda Octavia</td>
+                  <td>087 5626780</td>
+                </tr>
+                <tr>
+                  <td>1,009</td>
+                  <td>Kate O'Brien</td>
+                  <td>51 St Mary's Lane, Arklow, Co.Wicklow</td>
+                  <td>Gear Box problems on 2008 Volkswagen Polo</td>
+                  <td>089 3427336</td>
+                </tr>
+                <tr>
+                  <td>1,010</td>
+                  <td>Peter O'Reilly</td>
+                  <td>2 Kennedy Road,Mullingar,Co.Westmeath</td>
+                  <td>New Exhaust on 2006 Renault Megane 1.4</td>
+                  <td>085 1593238</td>
+                </tr>
+                <tr>
+                  <td>1,011</td>
+                  <td>Sean Downes</td>
+                  <td>35 Fishmans Way, Howth, Co.Dublin</td>
+                  <td>Car service needed on 2014 Ford Focus 1.6 tdi</td>
+                  <td>086 3267894</td>
+                </tr>
+                <tr>
+                  <td>1,012</td>
+                  <td>Fergal Joyce</td>
+                  <td>5 Butterfield Way,Rathfarnham,Co.Dublin</td>
+                  <td>Fuel Pump need on 2005 Ford Fiesta 1.2</td>
+                  <td>085 9845674</td>
+                </tr>
+                <tr>
+                  <td>1,013</td>
+                  <td>John Kavanagh</td>
+                  <td>22 Beaufort way,Navan,Co.Meath</td>
+                  <td>Need new brake pads on 2010 Honda Accord 2.2tdi</td>
+                  <td>087 2315788</td>
+                </tr>
+                <tr>
+                  <td>1,014</td>
+                  <td>Richie Reilly</td>
+                  <td>5 Bayside Lodge,Bray, Co.Wicklow</td>
+                  <td>New Tyres needed for 2009 Toyota Auris 1.4</td>
+                  <td>089 3425690</td>
+                </tr>
+                <tr>
+                  <td>1,015</td>
+                  <td>Clare Peterson</td>
+                  <td>25 Cresent Way,Mullingar,Co.Westmeath</td>
+                  <td>Car service needed on 2011 Kia Ceed 1.6 tdi</td>
+                  <td>086 5698123</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="../../dist/js/bootstrap.min.js"></script>
+    <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
+    <script src="../../assets/js/vendor/holder.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+  </body>
+</html>

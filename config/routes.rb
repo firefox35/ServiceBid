@@ -1,8 +1,8 @@
 Rails.application.routes.draw do
 
   devise_for :admins
-  devise_for :dealers
-  devise_for :customers 
+  devise_for :dealers, :controllers => {registrations: 'registrations'}
+  devise_for :customers, :controllers => {registrations: 'registrations'} 
      
   root 'pages#home'
  
