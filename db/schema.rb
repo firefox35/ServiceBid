@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161121204253) do
+ActiveRecord::Schema.define(version: 20161122203033) do
 
   create_table "admins", force: :cascade do |t|
     t.string   "email",                  default: "", null: false
@@ -70,9 +70,9 @@ ActiveRecord::Schema.define(version: 20161121204253) do
     t.string   "last_sign_in_ip"
     t.datetime "created_at",                          null: false
     t.datetime "updated_at",                          null: false
-    t.string   "dealer_name"
     t.string   "address"
     t.integer  "phone"
+    t.string   "name"
   end
 
   add_index "dealers", ["email"], name: "index_dealers_on_email", unique: true

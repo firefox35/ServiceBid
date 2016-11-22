@@ -5,6 +5,8 @@ Rails.application.routes.draw do
   devise_for :customers, :controllers => {registrations: 'registrations'} 
      
   root 'pages#home'
+  
+  
  
   get 'about' => "pages#about", as: :about
   get 'contact' => "pages#contact", as: :contact
