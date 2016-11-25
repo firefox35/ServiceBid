@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+ 
   devise_for :admins
   devise_for :dealers, :controllers => {registrations: 'registrations'}
   devise_for :customers, :controllers => {registrations: 'registrations'} 
@@ -10,8 +11,8 @@ Rails.application.routes.draw do
  
   get 'about' => "pages#about", as: :about
   get 'contact' => "pages#contact", as: :contact
-  get 'dealer' => "dealer#home", as: :dealer
-  get 'customer' => "customer#home", as: :customer
+  get 'dealer' => "dealer#home", as: :dealers
+  get 'customer' => "customer#home", as: :customers
 
 
   # The priority is based upon order of creation: first created -> highest priority.
