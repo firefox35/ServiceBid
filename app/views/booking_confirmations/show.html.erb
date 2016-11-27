@@ -1,0 +1,49 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Job offer:</strong>
+  <%= @booking_confirmation.job_offer_id %>
+</p>
+
+<p>
+  <strong>Customer name:</strong>
+  <%= @booking_confirmation.customer_name %>
+</p>
+
+<p>
+  <strong>Customer address:</strong>
+  <%= @booking_confirmation.customer_address %>
+</p>
+
+<p>
+  <strong>Customer phone number:</strong>
+  <%= @booking_confirmation.customer_phone_number %>
+</p>
+
+<p>
+  <strong>Dealer name:</strong>
+  <%= @booking_confirmation.dealer_name %>
+</p>
+
+<p>
+  <strong>Dealer address:</strong>
+  <%= @booking_confirmation.dealer_address %>
+</p>
+
+<p>
+  <strong>Dealer phone number:</strong>
+  <%= @booking_confirmation.dealer_phone_number %>
+</p>
+
+<p>
+  <strong>Date:</strong>
+  <%= @booking_confirmation.date %>
+</p>
+
+<p>
+  <strong>Time:</strong>
+  <%= @booking_confirmation.time %>
+</p>
+
+<%= link_to 'Edit', edit_booking_confirmation_path(@booking_confirmation) %> |
+<%= link_to 'Back', booking_confirmations_path %>

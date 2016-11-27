@@ -1,0 +1,2 @@
+json.extract! booking_confirmation, :id, :job_offer_id, :customer_name, :customer_address, :customer_phone_number, :dealer_name, :dealer_address, :dealer_phone_number, :date, :time, :created_at, :updated_at
+json.url booking_confirmation_url(booking_confirmation, format: :json)

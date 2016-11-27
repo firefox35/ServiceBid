@@ -1,0 +1,1 @@
+json.array! @booking_confirmations, partial: 'booking_confirmations/booking_confirmation', as: :booking_confirmation

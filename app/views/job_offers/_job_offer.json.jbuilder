@@ -1,0 +1,2 @@
+json.extract! job_offer, :id, :customer_id, :customer_name, :customer_address, :customer_phone_number, :date, :car_make, :car_model, :year, :issue, :bid_id, :customer_id, :dealer_id, :payment_id, :booking_confirmation_id, :created_at, :updated_at
+json.url job_offer_url(job_offer, format: :json)

@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  job_offer_id: 1
+  customer_name: MyString
+  customer_address: MyString
+  customer_phone_number: 1
+  dealer_name: MyString
+  dealer_address: MyString
+  dealer_phone_number: 1
+  date: 2016-11-26
+  time: 2016-11-26 23:30:12
+
+two:
+  job_offer_id: 1
+  customer_name: MyString
+  customer_address: MyString
+  customer_phone_number: 1
+  dealer_name: MyString
+  dealer_address: MyString
+  dealer_phone_number: 1
+  date: 2016-11-26
+  time: 2016-11-26 23:30:12

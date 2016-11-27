@@ -1,0 +1,33 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  customer_id: MyString
+  customer_name: MyString
+  customer_address: MyString
+  customer_phone_number: 1
+  date: 2016-11-26
+  car_make: MyString
+  car_model: MyString
+  year: 2016-11-26
+  issue: MyText
+  bid_id: 
+  customer_id: 
+  dealer_id: 
+  payment_id: 
+  booking_confirmation_id: 
+
+two:
+  customer_id: MyString
+  customer_name: MyString
+  customer_address: MyString
+  customer_phone_number: 1
+  date: 2016-11-26
+  car_make: MyString
+  car_model: MyString
+  year: 2016-11-26
+  issue: MyText
+  bid_id: 
+  customer_id: 
+  dealer_id: 
+  payment_id: 
+  booking_confirmation_id: 

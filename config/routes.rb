@@ -1,6 +1,11 @@
 Rails.application.routes.draw do
 
  
+  resources :booking_confirmations
+  resources :booking_confirmations
+  resources :payments
+  resources :bids
+  resources :job_offers
   devise_for :admins
   devise_for :dealers, :controllers => {registrations: 'registrations'}
   devise_for :customers, :controllers => {registrations: 'registrations'} 

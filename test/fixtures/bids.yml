@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  job_offer_id: 1
+  customer_id: 1
+  dealer_id: 1
+  price: 9.99
+
+two:
+  job_offer_id: 1
+  customer_id: 1
+  dealer_id: 1
+  price: 9.99

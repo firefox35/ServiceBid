@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  mastercard: false
+  visa: false
+  visa_debit: false
+  job_offer_id: 1
+  customer_name: MyString
+  card_number: 1
+  expiry_date: 2016-11-26
+  three_digit_pin_number: 1
+  amount: 9.99
+
+two:
+  mastercard: false
+  visa: false
+  visa_debit: false
+  job_offer_id: 1
+  customer_name: MyString
+  card_number: 1
+  expiry_date: 2016-11-26
+  three_digit_pin_number: 1
+  amount: 9.99

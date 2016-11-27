@@ -1,0 +1,49 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Mastercard:</strong>
+  <%= @payment.mastercard %>
+</p>
+
+<p>
+  <strong>Visa:</strong>
+  <%= @payment.visa %>
+</p>
+
+<p>
+  <strong>Visa debit:</strong>
+  <%= @payment.visa_debit %>
+</p>
+
+<p>
+  <strong>Job offer:</strong>
+  <%= @payment.job_offer_id %>
+</p>
+
+<p>
+  <strong>Customer name:</strong>
+  <%= @payment.customer_name %>
+</p>
+
+<p>
+  <strong>Card number:</strong>
+  <%= @payment.card_number %>
+</p>
+
+<p>
+  <strong>Expiry date:</strong>
+  <%= @payment.expiry_date %>
+</p>
+
+<p>
+  <strong>Three digit pin number:</strong>
+  <%= @payment.three_digit_pin_number %>
+</p>
+
+<p>
+  <strong>Amount:</strong>
+  <%= @payment.amount %>
+</p>
+
+<%= link_to 'Edit', edit_payment_path(@payment) %> |
+<%= link_to 'Back', payments_path %>

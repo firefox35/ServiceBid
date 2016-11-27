@@ -1,0 +1,53 @@
+<%= form_for(@booking_confirmation) do |f| %>
+  <% if @booking_confirmation.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@booking_confirmation.errors.count, "error") %> prohibited this booking_confirmation from being saved:</h2>
+
+      <ul>
+      <% @booking_confirmation.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :job_offer_id %><br>
+    <%= f.number_field :job_offer_id %>
+  </div>
+  <div class="field">
+    <%= f.label :customer_name %><br>
+    <%= f.text_field :customer_name %>
+  </div>
+  <div class="field">
+    <%= f.label :customer_address %><br>
+    <%= f.text_field :customer_address %>
+  </div>
+  <div class="field">
+    <%= f.label :customer_phone_number %><br>
+    <%= f.number_field :customer_phone_number %>
+  </div>
+  <div class="field">
+    <%= f.label :dealer_name %><br>
+    <%= f.text_field :dealer_name %>
+  </div>
+  <div class="field">
+    <%= f.label :dealer_address %><br>
+    <%= f.text_field :dealer_address %>
+  </div>
+  <div class="field">
+    <%= f.label :dealer_phone_number %><br>
+    <%= f.number_field :dealer_phone_number %>
+  </div>
+  <div class="field">
+    <%= f.label :date %><br>
+    <%= f.date_select :date %>
+  </div>
+  <div class="field">
+    <%= f.label :time %><br>
+    <%= f.time_select :time %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,53 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Job Offers</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Customer</th>
+      <th>Customer name</th>
+      <th>Customer address</th>
+      <th>Customer phone number</th>
+      <th>Date</th>
+      <th>Car make</th>
+      <th>Car model</th>
+      <th>Year</th>
+      <th>Issue</th>
+      <th>Bid</th>
+      <th>Customer</th>
+      <th>Dealer</th>
+      <th>Payment</th>
+      <th>Booking confirmation</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @job_offers.each do |job_offer| %>
+      <tr>
+        <td><%= job_offer.customer_id %></td>
+        <td><%= job_offer.customer_name %></td>
+        <td><%= job_offer.customer_address %></td>
+        <td><%= job_offer.customer_phone_number %></td>
+        <td><%= job_offer.date %></td>
+        <td><%= job_offer.car_make %></td>
+        <td><%= job_offer.car_model %></td>
+        <td><%= job_offer.year %></td>
+        <td><%= job_offer.issue %></td>
+        <td><%= job_offer.bid %></td>
+        <td><%= job_offer.customer %></td>
+        <td><%= job_offer.dealer %></td>
+        <td><%= job_offer.payment %></td>
+        <td><%= job_offer.booking_confirmation %></td>
+        <td><%= link_to 'Show', job_offer %></td>
+        <td><%= link_to 'Edit', edit_job_offer_path(job_offer) %></td>
+        <td><%= link_to 'Destroy', job_offer, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Job offer', new_job_offer_path %>
