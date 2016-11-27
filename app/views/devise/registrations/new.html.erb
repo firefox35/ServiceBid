@@ -9,7 +9,7 @@
     <meta name="author" content="">
     <link rel="icon" href="../../favicon.ico">
 
-    <title>Signin Template for Bootstrap</title>
+    <title>Registration Form</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../../dist/css/bootstrap.min.css" rel="stylesheet">
@@ -22,8 +22,8 @@
   </head>
 <body>
   
-  <div class="container">
-<h2>Sign up</h2>
+<div id="centre">
+<h2>Register Now</h2>
 
 <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
   <%= devise_error_messages! %>
@@ -61,9 +61,10 @@
     <%= f.submit "Sign up" %>
   </div>
   
-</div>
+
 <% end %>
 <%= render "devise/shared/links" %>
+   </div>
   </body>
 </html>
 

@@ -5,6 +5,12 @@ body {
   background-color: #eee;
 }
 
+#centre {
+  position:relative;
+  top:50px;
+  left:550px;
+}
+
 .form-signin {
   max-width: 330px;
   padding: 15px;

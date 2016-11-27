@@ -9,7 +9,7 @@
     <meta name="author" content="">
     <link rel="icon" href="../../favicon.ico">
 
-    <title>Signin Template for Bootstrap</title>
+    <title>Log in</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../../dist/css/bootstrap.min.css" rel="stylesheet">
@@ -32,7 +32,8 @@
   </head>
 <body>
   
-  <div class="container"><h2>Log in</h2>
+<div id ="centre">
+     <h2>Log in</h2>
 
 <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
   <div class="field">
@@ -55,10 +56,11 @@
   <div class="actions">
     <%= f.submit "Log in" %>
   </div>
-</div>
+
 <% end %>
 <%= render "devise/shared/links" %>
 <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+    </div>
   </body>
 </html>

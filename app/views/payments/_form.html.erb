@@ -1,3 +1,5 @@
+
+
 <%= form_for(@payment) do |f| %>
   <% if @payment.errors.any? %>
     <div id="error_explanation">
@@ -10,19 +12,48 @@
       </ul>
     </div>
   <% end %>
-
-  <div class="field">
+  <style type="text/css">
+   #wrap {
+     width:485px;
+   }
+   .left{
+     width:230px;
+     height:50px;
+     float:left;
+   }
+    .subleft{
+     width:80px;
+     height:50px;
+     float:right;
+   }
+    
+   .subleft2{
+     width:120px;
+     height:50px;
+     float:left;
+   }
+    
+  </style>
+<div id="wrap">
+  <div class="left">
+    <div class="field">
     <%= f.label :mastercard %><br>
     <%= f.check_box :mastercard %>
+    </div>
   </div>
-  <div class="field">
-    <%= f.label :visa %><br>
-    <%= f.check_box :visa %>
-  </div>
-  <div class="field">
+  <div class="subleft">
+    <div class="field">
     <%= f.label :visa_debit %><br>
     <%= f.check_box :visa_debit %>
   </div>
+  </div>
+  <div class="subleft2">
+    <div class="field">
+    <%= f.label :visa %><br>
+    <%= f.check_box :visa %>
+    </div>
+  </div>
+
   <div class="field">
     <%= f.label :job_offer_id %><br>
     <%= f.number_field :job_offer_id %>
@@ -50,4 +81,7 @@
   <div class="actions">
     <%= f.submit %>
   </div>
+</div>
 <% end %>
+
+
